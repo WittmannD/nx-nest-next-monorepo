@@ -1,15 +1,18 @@
-import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { AppPropsWithLayout } from '../types/Layout.type';
+
 import './styles.css';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+function CustomApp({ Component, pageProps }: AppPropsWithLayout) {
+  const getLayout = Component.getLayout ?? ((page) => page)
+
   return (
     <>
       <Head>
         <title>Welcome to spa!</title>
       </Head>
       <main className="app">
-        <Component {...pageProps} />
+        {getLayout(<Component {...pageProps} />)}
       </main>
     </>
   );

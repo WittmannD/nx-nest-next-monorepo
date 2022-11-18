@@ -1,0 +1,25 @@
+.badge {
+  @apply inline-flex
+    justify-center
+    items-center
+    font-sans
+    font-medium
+    text-white
+    px-[18px]
+    h-[32px]
+    min-w-[100px]
+    text-regular
+    rounded-full;
+}
+
+.badge-dark {
+  @extend .badge;
+  @apply bg-black
+    text-white;
+}
+
+.badge-light {
+  @extend .badge;
+  @apply bg-gray-100
+    text-black;
+}
