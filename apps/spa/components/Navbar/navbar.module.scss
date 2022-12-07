@@ -1,16 +1,16 @@
 .navbarContainer {
-  @apply bg-white flex items-center px-[70px] h-[86px] border-b;
+  @apply bg-white flex items-center px-[70px] h-[86px];
 
   & .logo {
     @apply basis-[302px];
   }
 
   & .navbarCenter {
-    @apply flex grow items-center justify-between gap-8;
+    @apply flex grow items-center justify-between gap-7;
   }
 
   & .navbarMenu {
-    @apply flex items-center text-regular gap-2 xl:gap-8;
+    @apply flex items-center text-regular gap-2 xl:gap-7;
   }
 
   & .menuItem {
@@ -25,16 +25,26 @@
     @apply grow flex items-center justify-center text-center;
   }
 
+  & .searchBar {
+    @apply mr-5;
+  }
+
+  & .signup {
+    @apply grow-0;
+  }
+
+  & .login {}
+
   & a:not([role=button]) {
-    @apply inline-block transition-colors ease-in duration-100 hover:text-primary-emerald p-4;
+    @apply inline-block transition-colors ease-in duration-100 hover:text-primary-emerald p-4 font-medium;
   }
 }
 
 .searchBar {
-  @apply flex items-center gap-2 h-[42px] px-5 ring-1 ring-gray-200 rounded-full basis-[420px];
+  @apply flex items-center gap-2 h-[42px] px-5 ring-1 ring-gray-200 rounded-full basis-[420px] text-gray-400;
 
   & > input[type=text] {
-    @apply grow h-full text-lg leading-tight placeholder-gray-500 focus:outline-0;
+    @apply grow h-full text-lg leading-tight placeholder-gray-400 focus:outline-0;
   }
 }
 
@@ -47,5 +57,5 @@
 }
 
 .signupButton {
-  @apply inline-flex items-center rounded-full bg-black h-[42px] text-white px-5;
+  @apply inline-flex items-center rounded-full bg-[#10162D] h-[42px] text-white px-8 font-medium shadow-floating;
 }

@@ -41,10 +41,10 @@ function Navbar() {
         </div>
       </div>
       <ul className={styles.navbarAuthMenu}>
-        <li className={clsx(styles.menuItem, styles.authItem)}>
+        <li className={clsx(styles.menuItem, styles.authItem, styles.login)}>
           <Link href={'/'}>Вхід</Link>
         </li>
-        <li className={clsx(styles.menuItem, styles.authItem)}>
+        <li className={clsx(styles.menuItem, styles.authItem, styles.signup)}>
           <Link href={'/'} className={styles.signupButton} role="button">
             Реєстрація
           </Link>

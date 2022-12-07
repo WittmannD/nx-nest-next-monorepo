@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import { AppPropsWithLayout } from '../types/Layout.type';
 
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+
 import './styles.css';
 
 function CustomApp({ Component, pageProps }: AppPropsWithLayout) {

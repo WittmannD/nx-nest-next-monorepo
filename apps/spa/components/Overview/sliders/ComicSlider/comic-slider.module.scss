@@ -1,0 +1,17 @@
+.slider-item {
+  @apply rounded-theme-lg overflow-hidden select-none;
+
+  &__detail {
+    @apply flex flex-col items-center h-full w-full py-[30px];
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 31.56%, #4270C6 82.81%);
+  }
+
+  &__title {
+    @apply mt-auto mb-4 font-semibold text-white text-4xl text-center;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .stats {
+    @apply flex gap-2.5;
+  }
+}

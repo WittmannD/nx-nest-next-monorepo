@@ -1,0 +1,15 @@
+.itemFigure {
+  @apply relative;
+
+  .cover {
+    @apply aspect-w-3 aspect-h-5;
+  }
+
+  img {
+    @apply select-none;
+  }
+}
+
+.overlay {
+  @apply absolute inset-0;
+}

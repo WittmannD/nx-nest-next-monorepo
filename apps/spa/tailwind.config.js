@@ -18,7 +18,8 @@ module.exports = {
           'emerald': '#4FADAF',
         },
         gray: {
-          100: '#dedede',
+          10: '#FBFBFB',
+          100: '#DEDEDE',
           200: '#C5C5C5',
           300: '#ADADAD',
           400: '#949494',
@@ -32,6 +33,12 @@ module.exports = {
       fontSize: {
         'small': '14px',
         'regular': '20px',
+      },
+      boxShadow: {
+        'floating': '0 4px 4px rgba(0,0,0,0.25)',
+      },
+      borderRadius: {
+        'theme-lg': '10px',
       }
     },
     fontFamily: {
@@ -39,5 +46,7 @@ module.exports = {
       sans: ['Montserrat'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio')
+  ],
 };

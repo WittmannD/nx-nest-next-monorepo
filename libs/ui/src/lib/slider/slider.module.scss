@@ -1,0 +1,13 @@
+
+.scrollbar-container {
+  @apply h-[8px] mt-[50px] mx-auto bg-gray-100 rounded-full;
+}
+
+.scrollbar {
+  @apply bg-black h-full rounded-full;
+
+  &.emerald {
+    @apply bg-primary-emerald;
+  }
+}
+

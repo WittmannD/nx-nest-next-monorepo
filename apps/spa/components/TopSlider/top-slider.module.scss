@@ -1,0 +1,54 @@
+.slider {
+  @apply py-[50px];
+
+  &__scrollbar {
+    @apply max-w-7xl;
+  }
+}
+
+.slide {
+  @apply flex gap-5 relative rounded-[40px] overflow-hidden bg-[#10162D];
+
+  &__cover {
+    @apply relative basis-2/5 h-[450px] shrink-0 bg-[#10162D];
+
+    img {
+      @apply h-full w-full object-cover object-center;
+    }
+  }
+
+  &__content-container {
+    @apply h-full flex items-center;
+  }
+
+  &__content {
+    @apply flex flex-col gap-8 basis-[700px] text-white font-normal mr-36;
+  }
+
+  &__title {
+    @apply text-[2.5rem] leading-tight font-semibold;
+  }
+
+  &__label {
+    @apply leading-none absolute origin-top-right text-8xl text-[#1D274D] font-semibold right-10 top-1/2;
+    transform: rotate(90deg) translateX(50%);
+  }
+
+  .tags {
+    @apply flex flex-row gap-2 text-gray-400;
+  }
+
+  .stat-list {
+    @apply flex gap-[40px] text-regular font-semibold mt-2;
+
+    li {
+      @apply flex items-center gap-2;
+    }
+  }
+
+  .overlay {
+    @apply absolute inset-0;
+    background: linear-gradient(to left, #10162d 0%, rgba(16, 22, 45, 0.5) 35%, rgba(248, 0, 0, 0)),
+    linear-gradient(to left, #10162d, rgba(248, 0, 0, 0.65) 5%, rgba(248, 0, 0, 0));
+  }
+}

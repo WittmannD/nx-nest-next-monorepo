@@ -1,0 +1,15 @@
+.overviewContainer {
+  @apply max-w-7xl px-7 py-[50px] mx-auto;
+}
+
+.sectionsContainer {
+  @apply px-6;
+
+  .sectionTitle {
+    @apply text-[2.5rem] leading-tight font-semibold;
+  }
+
+  .sectionSlider {
+    @apply my-10;
+  }
+}
